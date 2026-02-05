@@ -5,27 +5,15 @@ import Navbar from './components/Navbar.vue'
 <template>
   <div id="app">
     <Navbar />
-    <main class="page">
+    <main class="page bg-red-500">
       <router-view />
     </main>
   </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
@@ -53,5 +41,5 @@ nav.navbar a.router-link-active {
 
 .page {
   padding: 1.5rem;
-}
+} */
 </style>

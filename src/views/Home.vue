@@ -1,7 +1,8 @@
 <template>
   <section>
-    <h1>Accueil</h1>
-    <p>Bienvenue sur la page d'accueil.</p>
+    <h1>Évènement Opaleïs</h1>
+    <p>25 et 26 avril 2026</p>
+    <p>Château de Beauregard - Normandie</p>
   </section>
 </template>
 
