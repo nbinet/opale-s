@@ -1,17 +1,14 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <Navbar />
+    <main class="page">
+      <router-view />
+    </main>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
@@ -26,5 +23,35 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+}
+
+nav.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f5f7fb;
+  border-bottom: 1px solid #e6e9ef;
+  align-items: center;
+}
+
+nav.navbar a {
+  color: #34495e;
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+nav.navbar a.router-link-active {
+  background: #3b82f6;
+  color: white;
+}
+
+.page {
+  padding: 1.5rem;
 }
 </style>
