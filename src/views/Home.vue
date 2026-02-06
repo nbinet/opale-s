@@ -4,11 +4,12 @@ import Image from '../components/Description/Image.vue'
 import Text from '../components/Description/Text/index.vue'
 import Title from '../components/Description/Text/Title.vue'
 import Content from '../components/Description/Text/Content.vue'
+import Objectifs from '../components/Objectifs.vue'
 </script>
 
 <template>
-  <section class="">
-    <div class="flex flex-col items-center text-xl">
+  <section class="min-h-[80vh] relative bg-cover bg-center" style="background-image: url('public/portrait-1.jpg')">
+    <div class="flex flex-col items-center text-xl text-white">
       <div class="flex items-center text-lg font-bold">
         <h1>Évènement</h1>
         <img src="/public/logo.png" alt="Logo Opaleïs" class="w-48" />
@@ -26,6 +27,9 @@ import Content from '../components/Description/Text/Content.vue'
         <Content>Les fondateurs de l’association SILIVEN et organisateur de l’évènement, ont à coeur de créer un espace élégant, moderne et inclusif pour valoriser le savoir-faire de ces professionnels tout en mêlant beauté, art et convivialité.</Content>
       </Text>
     </Description>
+  </section>
+  <section>
+    <Objectifs />
   </section>
 </template>
 

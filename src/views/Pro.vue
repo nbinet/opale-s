@@ -8,10 +8,6 @@ import Content from '../components/Description/Text/Content.vue'
 
 <template>
   <section>
-    <h1>Page B</h1>
-    <p>Contenu de la Page B.</p>
-  </section>
-  <section>
     <Description>
       <Image><img src="/public/beauregard-nuit.png" alt="Logo Opaleïs" /></Image>
       <Text>
