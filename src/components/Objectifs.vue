@@ -17,7 +17,7 @@ const objectifs = ref([
                 'flex items-center gap-4',
                 i % 2 ? 'flex-row-reverse' : ''
             ]">
-        <img :src="`/public/portrait-${i + 1}.jpg`" alt="Check" class="w-1/3 h-50 object-cover rounded-2xl" />
+        <img :src="`/public/portrait-${i + 2}.jpg`" alt="Check" class="w-1/3 h-50 object-cover rounded-2xl" />
             <p class=" text-center">{{ objectif }}</p>
         </div>
         </div>
