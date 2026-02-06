@@ -4,6 +4,7 @@ import Image from '../components/Description/Image.vue'
 import Text from '../components/Description/Text/index.vue'
 import Title from '../components/Description/Text/Title.vue'
 import Content from '../components/Description/Text/Content.vue'
+import Objectifs from '../components/Objectifs.vue'
 </script>
 
 <template>
@@ -16,6 +17,9 @@ import Content from '../components/Description/Text/Content.vue'
         <Content>Les fondateurs de l’association SILIVEN et organisateur de l’évènement, ont à coeur de créer un espace élégant, moderne et inclusif pour valoriser le savoir-faire de ces professionnels tout en mêlant beauté, art et convivialité.</Content>
       </Text>
     </Description>
+  </section>
+  <section>
+    <Objectifs />
   </section>
 </template>
 

@@ -8,11 +8,11 @@ import Objectifs from '../components/Objectifs.vue'
 </script>
 
 <template>
-  <section class="min-h-[80vh] relative bg-cover bg-center" style="background-image: url('public/portrait-1.jpg')">
-    <div class="flex flex-col items-center text-xl text-white">
-      <div class="flex items-center text-lg font-bold">
+  <section class="min-h-[80vh] bg-cover bg-center  flex items-center justify-center" style="background-image: url('public/portrait-4.jpg')">
+    <div class="flex flex-col items-center text-center text-xl text-white h-full">
+      <div class="flex items-center text-lg sm:text-2xl font-semibold">
         <h1>Évènement</h1>
-        <img src="/public/logo.png" alt="Logo Opaleïs" class="w-48" />
+        <img src="/public/logo.png" alt="Logo Opaleïs" class="h-20 md:h-64" />
       </div>
       <p>25 et 26 avril 2026</p>
       <p>Château de Beauregard - Normandie</p>
