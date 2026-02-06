@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   { path: '/', name: 'Home', component: () => import('../views/Home.vue') },
-  { path: '/page-a', name: 'PageA', component: () => import('../views/PageA.vue') },
-  { path: '/page-b', name: 'PageB', component: () => import('../views/PageB.vue') },
+  { path: '/pro', name: 'Pro', component: () => import('../views/Contact.vue') },
+  { path: '/contact', name: 'Contact', component: () => import('../views/Contact.vue') },
 ]
 
 const router = createRouter({

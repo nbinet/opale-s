@@ -1,18 +1,7 @@
 <template>
-  <nav class="navbar">
+  <nav class="bg-[#F1E8DD] text-[#D29A33] flex items-center justify-evenly gap-4 p-4">
+    <router-link to="/pro">Espace pro</router-link>
     <router-link to="/">Accueil</router-link>
-    <router-link to="/page-a">Page A</router-link>
-    <router-link to="/page-b">Page B</router-link>
+    <router-link to="/contact">Contact</router-link>
   </nav>
 </template>
-
-<script setup lang="ts">
-// aucun script nécessaire pour ce composant simple
-</script>
-
-<style scoped>
-.navbar {
-  display: flex;
-  gap: 1rem;
-}
-</style>

@@ -5,41 +5,8 @@ import Navbar from './components/Navbar.vue'
 <template>
   <div id="app">
     <Navbar />
-    <main class="page bg-red-500">
+    <main class="px-4">
       <router-view />
     </main>
   </div>
 </template>
-
-<style scoped>
-
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
-}
-
-nav.navbar {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  background: #f5f7fb;
-  border-bottom: 1px solid #e6e9ef;
-  align-items: center;
-}
-
-nav.navbar a {
-  color: #34495e;
-  text-decoration: none;
-  padding: 0.4rem 0.6rem;
-  border-radius: 6px;
-}
-
-nav.navbar a.router-link-active {
-  background: #3b82f6;
-  color: white;
-}
-
-.page {
-  padding: 1.5rem;
-} */
-</style>
