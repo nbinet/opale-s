@@ -4,9 +4,9 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div id="app" class="bodoni-moda-regular">
+  <div id="app" class="bodoni-moda-regular bg-[#FAFAF9] p-4">
     <Navbar />
-    <main class="p-4">
+    <main class="py-4 space-y-4">
       <router-view />
     </main>
     <Footer />
