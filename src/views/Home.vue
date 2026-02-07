@@ -11,8 +11,7 @@ import Objectifs from '../components/Objectifs.vue'
   <section class="min-h-[80vh] -m-4 mb-2 bg-cover bg-center  flex items-center justify-center" style="background-image: url('public/beauregard-nuit.png')">
     <div class="flex flex-col items-center text-center text-xl text-white h-full">
       <div class="flex items-center text-lg sm:text-2xl font-semibold">
-        <h1>Évènement</h1>
-        <img src="/public/logo.png" alt="Logo Opaleïs" class="h-20 md:h-48" />
+        <h1>Évènement Opaleïs</h1>
       </div>
       <p>25 et 26 avril 2026</p>
       <p>Château de Beauregard - Normandie</p>
@@ -22,9 +21,11 @@ import Objectifs from '../components/Objectifs.vue'
     <Description>
       <Image><img src="/public/portrait-1.jpg" alt="Logo Opaleïs" /></Image>
       <Text>
-        <Title>L’ÉVÈNEMENT OPALÉÏS</Title>
-        <Content>Prothésistes ongulaires, techniciennes de cils, tatoueurs, perceurs ou encore coiffeur, rencontrez autant de professionnels et artistes, spécialisés dans la sublimation du corps, grâce au nouvel évènements OPALEÏS !</Content>
-        <Content>Les fondateurs de l’association SILIVEN et organisateur de l’évènement, ont à coeur de créer un espace élégant, moderne et inclusif pour valoriser le savoir-faire de ces professionnels tout en mêlant beauté, art et convivialité.</Content>
+        <Title>L’évènement Opaleïs</Title>
+        <Content>Prothésistes ongulaires, techniciennes de cils, tatoueurs, perceurs ou encore coiffeur, rencontrez autant de professionnels et artistes, spécialisés dans la sublimation du corps, grâce au nouvel évènements convention OPALEÏS !</Content>
+        <Content>Les fondateurs de l’association SILIVEN et organisateur de l’évènement, ont à coeur de créer un espace élégant, moderne et inclusif pour valoriser le savoir-faire de ces professionnels tout en mêlant beauté, art et convivialité.
+        <br />
+          L’objectif étant de favoriser les échanges entre professionnels et à offrir au public une expérience sensorielle et inspirante.</Content>
       </Text>
     </Description>
   </section>

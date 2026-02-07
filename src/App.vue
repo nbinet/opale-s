@@ -4,7 +4,7 @@ import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" class="bodoni-moda-regular">
     <Navbar />
     <main class="p-4">
       <router-view />

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import Title from './Description/Text/Title.vue';
 
 const objectifs = ref([
     "Créer des passerelles entre les acteurs du monde de la beauté, du style et du bien-être",
@@ -11,7 +12,7 @@ const objectifs = ref([
 
 <template>
     <section class="flex flex-col items-center gap-4">
-        <h2 class="text-xl mb-2 uppercase">Nos Objectifs</h2>
+        <Title>Nos Objectifs</Title>
         <div class="flex flex-col gap-2">
             <div v-for="(objectif, i) in objectifs" :key="objectif" :class="[
                 'flex items-center gap-4',

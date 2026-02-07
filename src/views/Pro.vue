@@ -12,15 +12,27 @@ import Objectifs from '../components/Objectifs.vue'
     <Description>
       <Image><img src="/public/beauregard-nuit.png" alt="Logo Opaleïs" /></Image>
       <Text>
-        <Title>ÊTRE EXPOSANT</Title>
-        <Content>Prothésistes ongulaires, techniciennes de cils, tatoueurs, perceurs ou encore coiffeur, rencontrez autant de professionnels et artistes, spécialisés dans la sublimation du corps, grâce au nouvel évènements OPALEÏS !</Content>
-        <Content>Les fondateurs de l’association SILIVEN et organisateur de l’évènement, ont à coeur de créer un espace élégant, moderne et inclusif pour valoriser le savoir-faire de ces professionnels tout en mêlant beauté, art et convivialité.</Content>
+        <Title>Être exposant</Title>
+        <Content>Soutenir OPALEÏS et devenir partenaire, c’est participer à une aventure humaine et artistique qui valorise les talents locaux, l’innovation et la créativité. 
+          <br />
+C’est aussi l’opportunité d’associer votre image à un événement élégant, fédérateur et porteur de sens, dédié à l’art de sublimer le corps.</Content>
+        <Content>En devenant partenaire, vous soutenez la créativité, la confiance en soi et la valorisation du corps comme expression artistique. Votre marque prendra part à un rendez-vous élégant, humain et inspirant, où chaque collaboration trouve un sens.</Content>
+        <Content>Nous serons heureux de compter votre entreprise parmi nos partenaires pour faire d’OPALEÏS un rendez-vous unique, empreint d’élégance, de partage et d’inspiration.</Content>
       </Text>
     </Description>
   </section>
   <section>
-    <Objectifs />
+    <Title class="text-center pt-4">Vos avantages</Title>
+    <ul class="list-disc list-inside space-y-2">
+      <li><span class="font-bold">Visibilité:</span> Logo et identité intégrés à nos supports de communication</li>
+      <li><span class="font-bold">Valorisation:</span> Présence et visibilité sur le lieu de l’événement.</li>
+      <li><span class="font-bold">Remerciements :</span> Citation et remerciements lors du cocktail &amp; DJ set.</li>
+      <li><span class="font-bold">Partenariat sur mesure :</span> Opportunité de développer votre réseau et de valoriser votre marque auprès d’un public ciblé et engagé.</li>
+    </ul>
+    <p class="text-center pt-4">Chaque partenariat est pensé sur mesure, en fonction de vos valeurs, de votre activité et de vos envies de collaboration.</p>
+  </section>
+  <section class="flex flex-col items-center gap-4 pt-4">
+    <Title>Ils nous font confiance</Title>
+    <div></div>
   </section>
 </template>
-
-<style scoped></style>
