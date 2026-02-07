@@ -14,7 +14,6 @@ import Artists from '../components/Artists.vue'
     <div class="flex flex-col items-center text-white h-full">
       <div class="flex items-center text-3xl sm:text-5xl font-semibold">
         <h1>Évènement</h1>
-        <!-- <span class="great-vibes-regular text-[#D29A33]">Opaleïs</span> -->
          <img src="/public/logo.png" alt="Logo Opaleïs" class="h-20 sm:h-40 ml-4" />
       </div>
       <div class="flex flex-col items-center text-center text-lg sm:text-3xl">
@@ -25,7 +24,7 @@ import Artists from '../components/Artists.vue'
   </section>
   <section>
     <Description>
-      <Image><img src="/public/portrait-6.jpg" alt="portrait" /></Image>
+      <Image><img src="/public/event_resume.jpg" alt="portrait" /></Image>
       <Text>
         <Title>L’évènement Opaleïs</Title>
         <Content>Prothésistes ongulaires, techniciennes de cils, tatoueurs, perceurs ou encore coiffeur, rencontrez autant de professionnels et artistes, spécialisés dans la sublimation du corps, grâce au nouvel évènements convention OPALEÏS !</Content>

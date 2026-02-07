@@ -16,9 +16,9 @@ const objectifs = ref([
         <div class="flex flex-col gap-2">
             <div v-for="(objectif, i) in objectifs" :key="objectif" :class="[
                 'flex items-center gap-4',
-                i % 2 ? 'flex-row-reverse' : ''
+                i % 2 ? 'flex-row' : 'flex-row-reverse'
             ]">
-        <img :src="`/public/portrait-${i + 2}.jpg`" alt="Check" class="w-1/3 h-50 object-cover rounded-2xl border-2 border-[#E5AE38]" />
+        <img :src="`/public/objectif-${i + 1}.jpg`" alt="Check" class="w-1/3 h-50 object-cover rounded-2xl border-2 border-[#E5AE38]" />
             <p class=" text-center">{{ objectif }}</p>
         </div>
         </div>

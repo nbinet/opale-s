@@ -10,7 +10,7 @@ import Artists from '../components/Artists.vue'
 <template>
   <section>
     <Description>
-      <Image><img src="/public/portrait-2.JPG" alt="Portrait de l'exposant" /></Image>
+      <Image><img src="/public/exposant.JPG" alt="Portrait de l'exposant" /></Image>
       <Text>
         <Title>Être exposant</Title>
         <Content>Soutenir OPALEÏS et devenir partenaire, c’est participer à une aventure humaine et artistique qui valorise les talents locaux, l’innovation et la créativité. 
