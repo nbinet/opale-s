@@ -12,6 +12,7 @@ const openLink = (url: string) => {
       <div class="flex flex-col gap-2">
         <p>06 73 65 98 76</p>
         <p>associationsiliven@gmail.com</p>
+        <p class="text-[10px]">media: freepik, pixabay et association siliven</p>
       </div>
       <div class="flex flex-col items-center">
         <img src="/public/instagram.png" alt="Instagram" class="h-14  cursor-pointer hover:scale-105 transition-transform duration-300" @click="openLink('https://www.instagram.com/opaleis_events/')" />
