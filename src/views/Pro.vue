@@ -23,11 +23,11 @@ C’est aussi l’opportunité d’associer votre image à un événement élég
   </section>
   <section>
     <Title class="text-center pt-4">Vos avantages</Title>
-    <ul class="list-disc list-inside space-y-2">
-      <li><span class="font-bold">Visibilité:</span> Logo et identité intégrés à nos supports de communication</li>
-      <li><span class="font-bold">Valorisation:</span> Présence et visibilité sur le lieu de l’événement.</li>
-      <li><span class="font-bold">Remerciements :</span> Citation et remerciements lors du cocktail &amp; DJ set.</li>
-      <li><span class="font-bold">Partenariat sur mesure :</span> Opportunité de développer votre réseau et de valoriser votre marque auprès d’un public ciblé et engagé.</li>
+    <ul class="list-disc list-inside custom-points">
+      <li><span class="font-bold text-[#D29A33]">Visibilité:</span> Logo et identité intégrés à nos supports de communication</li>
+      <li><span class="font-bold text-[#D29A33]">Valorisation:</span> Présence et visibilité sur le lieu de l’événement.</li>
+      <li><span class="font-bold text-[#D29A33]">Remerciements :</span> Citation et remerciements lors du cocktail &amp; DJ set.</li>
+      <li><span class="font-bold text-[#D29A33]">Partenariat sur mesure :</span> Opportunité de développer votre réseau et de valoriser votre marque auprès d’un public ciblé et engagé.</li>
     </ul>
     <p class="text-center pt-4">Chaque partenariat est pensé sur mesure, en fonction de vos valeurs, de votre activité et de vos envies de collaboration.</p>
   </section>
@@ -36,3 +36,9 @@ C’est aussi l’opportunité d’associer votre image à un événement élég
     <div></div>
   </section>
 </template>
+
+<style scoped>
+.custom-points ::marker {
+  color: #D29A33;
+}
+</style>
