@@ -6,6 +6,7 @@ import Title from '../components/Description/Text/Title.vue'
 import Content from '../components/Description/Text/Content.vue'
 import Objectifs from '../components/Objectifs.vue'
 import Exposant from '../components/Exposant.vue'
+import Artists from '../components/Artists.vue'
 </script>
 
 <template>
@@ -59,6 +60,10 @@ import Exposant from '../components/Exposant.vue'
       <Exposant style="background-image: url('public/cils.jpg')">Cils</Exposant>
       <Exposant style="background-image: url('public/ongles.jpg')">Ongles</Exposant>
     </div>
+  </section>
+  <section>
+    <Title class="text-center">Ils seront présents</Title>
+    <Artists />
   </section>
   <section>
     <Objectifs />
