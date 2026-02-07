@@ -5,6 +5,7 @@ import Text from '../components/Description/Text/index.vue'
 import Title from '../components/Description/Text/Title.vue'
 import Content from '../components/Description/Text/Content.vue'
 import Objectifs from '../components/Objectifs.vue'
+import Exposant from '../components/Exposant.vue'
 </script>
 
 <template>
@@ -48,6 +49,16 @@ import Objectifs from '../components/Objectifs.vue'
       </div>
     </div>
     <p class="text-center mt-4">Programme détaillé à venir</p>
+  </section>
+  <section>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:px-[10%]">
+      <Exposant><Title><span class="text-2xl">Exposants</span></Title></Exposant>
+      <Exposant style="background-image: url('public/perceur.jpg')">Perceur</Exposant>
+      <Exposant style="background-image: url('public/coiffeur.jpg')">Coiffeur</Exposant>
+      <Exposant style="background-image: url('public/tatoueur.jpg')">Tatoueur</Exposant>
+      <Exposant style="background-image: url('public/cils.jpg')">Cils</Exposant>
+      <Exposant style="background-image: url('public/ongles.jpg')">Ongles</Exposant>
+    </div>
   </section>
   <section>
     <Objectifs />
