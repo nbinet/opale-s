@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-1/3 max-h-64 overflow-hidden hidden sm:block">
-    <slot />
+  <div class="w-full md:minw-1/3 overflow-hidden rounded-2xl hidden sm:block border-2 border-[#E5AE38]">
+    <!-- <slot /> -->
   </div>
 </template>

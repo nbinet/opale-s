@@ -23,7 +23,7 @@ import Objectifs from '../components/Objectifs.vue'
   </section>
   <section>
     <Description>
-      <Image><img src="/public/portrait-1.jpg" alt="Logo Opaleïs" /></Image>
+      <Image><img src="/public/portrait-6.jpg" alt="Logo Opaleïs" /></Image>
       <Text>
         <Title>L’évènement Opaleïs</Title>
         <Content>Prothésistes ongulaires, techniciennes de cils, tatoueurs, perceurs ou encore coiffeur, rencontrez autant de professionnels et artistes, spécialisés dans la sublimation du corps, grâce au nouvel évènements convention OPALEÏS !</Content>
@@ -47,6 +47,7 @@ import Objectifs from '../components/Objectifs.vue'
         <p>Inscription requise pour les ateliers</p>
       </div>
     </div>
+    <p class="text-center mt-4">Programme détaillé à venir</p>
   </section>
   <section>
     <Objectifs />
