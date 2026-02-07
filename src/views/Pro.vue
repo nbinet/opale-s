@@ -4,6 +4,7 @@ import Image from '../components/Description/Image.vue'
 import Text from '../components/Description/Text/index.vue'
 import Title from '../components/Description/Text/Title.vue'
 import Content from '../components/Description/Text/Content.vue'
+import Artists from '../components/Artists.vue'
 </script>
 
 <template>
@@ -32,7 +33,7 @@ C’est aussi l’opportunité d’associer votre image à un événement élég
   </section>
   <section class="flex flex-col items-center gap-4 pt-4">
     <Title>Ils nous font confiance</Title>
-    <div></div>
+    <Artists />
   </section>
 </template>
 

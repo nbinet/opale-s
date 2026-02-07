@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Title from './Description/Text/Title.vue';
 
 const artistes = ref([
     { image: 'nails', insta: 'nails_addict_caen_', category: 'Prothésiste ongulaire', link: 'https://www.instagram.com/nails_addict_caen_/' },
