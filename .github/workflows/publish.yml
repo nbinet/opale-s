@@ -5,6 +5,9 @@ on:
     branches:
       - main # The branch name your are commit the new changes
 
+permissions:
+  contents: write # This is required to push the changes to the branch
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +23,7 @@ jobs:
         run: npm run build # The build command of your project
 
       - name: Push
-        uses: s0/git-publish-subdir-action@develop
+        uses: s0/git-publish-subdir-action@v2
         env:
           REPO: self
           BRANCH: build # The branch name where you want to push the assets
