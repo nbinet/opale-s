@@ -3,7 +3,7 @@ import insta from '@/assets/images/instagram.png'
 import bijou from '@/assets/images/bijou.png'
 import arrow from '@/assets/images/arrow.png'
 import opaleisInsta from '@/assets/images/opaleis_insta.png'
-import portrait from '@/assets/images/portrait-7.jpg'
+import portrait from '@/assets/images/hair.jpg'
 
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
