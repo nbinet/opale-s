@@ -26,7 +26,7 @@ import Artists from '../components/Artists.vue'
          <img :src="logo" alt="Logo Opaleïs" class="h-20 sm:h-40 ml-4" />
       </div>
       <div class="flex flex-col items-center text-center text-lg sm:text-3xl">
-        <p>25 et 26 avril 2026 (pas 2027)</p>
+        <p>25 et 26 avril 2026</p>
         <p>Domaine de Beauregard - Normandie</p>
       </div>
     </div>
