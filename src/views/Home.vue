@@ -1,4 +1,13 @@
 <script setup lang="ts">
+import logo from '@/assets/images/logo.png'
+import resume from '@/assets/images/event_resume.jpg'
+import beauregard from '@/assets/images/beauregard-filtre.jpg'
+import perceur from '@/assets/images/perceur.jpg'
+import coiffeur from '@/assets/images/coiffeur.jpg'
+import tatoueur from '@/assets/images/tatoueur.jpg'
+import cils from '@/assets/images/cils.jpg'
+import ongles from '@/assets/images/ongles.jpg'
+
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
 import Text from '../components/Description/Text/index.vue'
@@ -10,11 +19,11 @@ import Artists from '../components/Artists.vue'
 </script>
 
 <template>
-  <section class="min-h-[80vh] bg-cover bg-top flex items-center justify-center relative" style="background-image: url('public/beauregard-filtre.jpg')">
+  <section class="min-h-[80vh] bg-cover bg-top flex items-center justify-center relative" :style="{ backgroundImage: `url(${beauregard})` }">
     <div class="flex flex-col items-center text-white h-full">
       <div class="flex items-center text-3xl sm:text-5xl font-semibold">
         <h1>Évènement</h1>
-         <img src="/public/logo.png" alt="Logo Opaleïs" class="h-20 sm:h-40 ml-4" />
+         <img :src="logo" alt="Logo Opaleïs" class="h-20 sm:h-40 ml-4" />
       </div>
       <div class="flex flex-col items-center text-center text-lg sm:text-3xl">
         <p>25 et 26 avril 2026</p>
@@ -24,7 +33,7 @@ import Artists from '../components/Artists.vue'
   </section>
   <section>
     <Description>
-      <Image><img src="/public/event_resume.jpg" alt="portrait" /></Image>
+      <Image><img :src="resume" alt="portrait" /></Image>
       <Text>
         <Title>L’évènement Opaleïs</Title>
         <Content>Prothésistes ongulaires, techniciennes de cils, tatoueurs, perceurs ou encore coiffeur, rencontrez autant de professionnels et artistes, spécialisés dans la sublimation du corps, grâce au nouvel évènements convention OPALEÏS !</Content>
@@ -53,11 +62,11 @@ import Artists from '../components/Artists.vue'
   <section>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:px-[10%]">
       <Exposant><Title><span class="capitalize">Exposants</span></Title></Exposant>
-      <Exposant style="background-image: url('public/perceur.jpg')">Perceur</Exposant>
-      <Exposant style="background-image: url('public/coiffeur.jpg')">Coiffeur</Exposant>
-      <Exposant style="background-image: url('public/tatoueur.jpg')">Tatoueur</Exposant>
-      <Exposant style="background-image: url('public/cils.jpg')">Cils</Exposant>
-      <Exposant style="background-image: url('public/ongles.jpg')">Ongles</Exposant>
+      <Exposant :style="{ backgroundImage: `url(${perceur})` }">Perceur</Exposant>
+      <Exposant :style="{ backgroundImage: `url(${coiffeur})` }">Coiffeur</Exposant>
+      <Exposant :style="{ backgroundImage: `url(${tatoueur})` }">Tatoueur</Exposant>
+      <Exposant :style="{ backgroundImage: `url(${cils})` }">Cils</Exposant>
+      <Exposant :style="{ backgroundImage: `url(${ongles})` }">Ongles</Exposant>
     </div>
   </section>
   <section>

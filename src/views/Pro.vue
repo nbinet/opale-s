@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import handshake from '@/assets/images/handshake.JPG'
+
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
 import Text from '../components/Description/Text/index.vue'
@@ -10,7 +12,7 @@ import Artists from '../components/Artists.vue'
 <template>
   <section>
     <Description>
-      <Image><img src="/public/handshake.JPG" alt="Portrait de l'exposant" class="hidden md:block" /></Image>
+      <Image><img :src="handshake" alt="Portrait de l'exposant" class="hidden md:block" /></Image>
       <Text>
         <Title>Être exposant</Title>
         <Content>Soutenir OPALEÏS et devenir partenaire, c’est participer à une aventure humaine et artistique qui valorise les talents locaux, l’innovation et la créativité. 
