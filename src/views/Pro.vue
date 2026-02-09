@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import handshake from '@/assets/images/handshake.JPG'
+import handshake from '@/assets/images/handshake.jpg'
 
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
