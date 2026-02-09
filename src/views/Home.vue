@@ -52,7 +52,7 @@ import Artists from '../components/Artists.vue'
   </section>
   <section>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:px-[10%]">
-      <Exposant><Title><span class="text-2xl">Exposants</span></Title></Exposant>
+      <Exposant><Title><span class="capitalize">Exposants</span></Title></Exposant>
       <Exposant style="background-image: url('public/perceur.jpg')">Perceur</Exposant>
       <Exposant style="background-image: url('public/coiffeur.jpg')">Coiffeur</Exposant>
       <Exposant style="background-image: url('public/tatoueur.jpg')">Tatoueur</Exposant>
