@@ -2,11 +2,12 @@
 import logo from '@/assets/images/logo.png'
 import resume from '@/assets/images/event_resume.jpg'
 import beauregard from '@/assets/images/beauregard-filtre.jpg'
-import perceur from '@/assets/images/perceur.jpg'
-import coiffeur from '@/assets/images/coiffeur.jpg'
-import tatoueur from '@/assets/images/tatoueur.jpg'
-import cils from '@/assets/images/cils.jpg'
-import ongles from '@/assets/images/ongles.jpg'
+
+import perceur from '@/assets/images/perceur.png'
+import coiffeur from '@/assets/images/coiffeur.png'
+import tatoueur from '@/assets/images/tatoueur.png'
+import cils from '@/assets/images/cils.png'
+import ongles from '@/assets/images/ongles.png'
 
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
