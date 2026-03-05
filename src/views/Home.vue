@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import logo from '@/assets/images/logo.png'
 import resume from '@/assets/images/event_resume.jpg'
-import beauregard from '@/assets/images/beauregard-filtre.jpg'
 
 import perceur from '@/assets/images/perceur.png'
 import coiffeur from '@/assets/images/coiffeur.png'
 import tatoueur from '@/assets/images/tatoueur.png'
 import cils from '@/assets/images/cils.png'
 import ongles from '@/assets/images/ongles.png'
+import annonce from '@/assets/images/annonce2.png'
+import annonceMobile from '@/assets/images/annonce.png'
 
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
@@ -15,23 +16,40 @@ import Text from '../components/Description/Text/index.vue'
 import Title from '../components/Description/Text/Title.vue'
 import Content from '../components/Description/Text/Content.vue'
 import Objectifs from '../components/Objectifs.vue'
-import Exposant from '../components/Exposant.vue'
+import Exposants from '../components/Exposants/index.vue'
+import ExposantsImage from '../components/Exposants/Image.vue'
+import ExposantsTitle from '../components/Exposants/Title.vue'
 import Artists from '../components/Artists.vue'
+
+const exposants = [
+  { alt: 'perceur', image: perceur },
+  { alt: 'coiffeur', image: coiffeur },
+  { alt: 'tatoueur', image: tatoueur },
+  { alt: 'cils', image: cils },
+  { alt: 'ongles', image: ongles }
+]
 </script>
 
 <template>
-  <section class="min-h-[80vh] bg-cover bg-top flex items-center justify-center relative" :style="{ backgroundImage: `url(${beauregard})` }">
-    <div class="flex flex-col items-center text-white h-full">
-      <div class="flex items-center text-3xl sm:text-5xl font-semibold">
-        <h1>Évènement</h1>
-         <img :src="logo" alt="Logo Opaleïs" class="h-20 sm:h-40 ml-4" />
-      </div>
-      <div class="flex flex-col items-center text-center text-lg sm:text-3xl">
-        <p>25 et 26 avril 2026 (pas 2027)</p>
-        <p>Domaine de Beauregard - Normandie</p>
-      </div>
+  <section class="min-h-[80vh] bg-cover bg-bottom flex flex-col items-center justify-between relative -mx-4 text-[#967050] text-center" :style="{ backgroundImage: `url(${annonce})` }">
+    <div class="flex flex-col items-center">
+      <img :src="logo" alt="Logo Opaleïs" class="h-20 sm:h-40" />
+      <div class="text-2xl sm:text-4xl">La convention pour l'embellissement corporel</div>
+    </div>
+    <div class="text-lg sm:text-2xl mb-4">
+      25 & 26 Avril 2026 - Domaine de Beauregard - Normandie
     </div>
   </section>
+
+  <section>
+    <Exposants>
+      <div v-for="exposant in exposants" :key="exposant.alt">
+        <ExposantsImage :src="exposant.image" :alt="exposant.alt" />
+        <ExposantsTitle>{{ exposant.alt }}</ExposantsTitle>
+      </div>
+    </Exposants>
+  </section>
+
   <section>
     <Description>
       <Image><img :src="resume" alt="portrait" /></Image>
@@ -44,6 +62,7 @@ import Artists from '../components/Artists.vue'
       </Text>
     </Description>
   </section>
+
   <section>
     <Title class="text-center">Au programme</Title>
     <div class="flex flex-col md:flex-row md:justify-between xl:justify-around">
@@ -60,20 +79,12 @@ import Artists from '../components/Artists.vue'
     </div>
     <p class="text-center mt-4">Programme détaillé à venir</p>
   </section>
-  <section>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:px-[10%]">
-      <Exposant><Title><span class="capitalize">Exposants</span></Title></Exposant>
-      <Exposant :style="{ backgroundImage: `url(${perceur})` }">Perceur</Exposant>
-      <Exposant :style="{ backgroundImage: `url(${coiffeur})` }">Coiffeur</Exposant>
-      <Exposant :style="{ backgroundImage: `url(${tatoueur})` }">Tatoueur</Exposant>
-      <Exposant :style="{ backgroundImage: `url(${cils})` }">Cils</Exposant>
-      <Exposant :style="{ backgroundImage: `url(${ongles})` }">Ongles</Exposant>
-    </div>
-  </section>
+
   <section>
     <Title class="text-center">Ils seront présents</Title>
     <Artists />
   </section>
+
   <section>
     <Objectifs />
   </section>
