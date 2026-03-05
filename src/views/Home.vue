@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+
 import logo from '@/assets/images/logo.png'
 import resume from '@/assets/images/event_resume.jpg'
 
@@ -28,16 +30,30 @@ const exposants = [
   { alt: 'cils', image: cils },
   { alt: 'ongles', image: ongles }
 ]
+
+// responsive background logic
+const width = ref(typeof window !== 'undefined' ? window.innerWidth : 1024)
+const onResize = () => (width.value = window.innerWidth)
+onMounted(() => window.addEventListener('resize', onResize))
+onUnmounted(() => window.removeEventListener('resize', onResize))
+
+const isLarge = computed(() => width.value >= 1536)
+
+// computed style: you can add an overlay via linear-gradient to darken the image
+const backgroundStyle = computed(() => ({
+  backgroundImage: `url(${isLarge.value ? annonce : annonceMobile})`
+}))
 </script>
 
 <template>
-  <section class="min-h-[80vh] bg-cover bg-bottom flex flex-col items-center justify-between relative -mx-4 text-[#967050] text-center" :style="{ backgroundImage: `url(${annonce})` }">
-    <div class="flex flex-col items-center">
+  <section class="min-h-[80vh] bg-cover bg-center flex flex-col items-center 2xl:items-start justify-between 2xl:justify-around relative -mx-4 text-[#967050] text-center" :style="backgroundStyle">
+    <div class="flex flex-col items-center w-full 2xl:w-1/3">
       <img :src="logo" alt="Logo Opaleïs" class="h-20 sm:h-40" />
       <div class="text-2xl sm:text-4xl">La convention pour l'embellissement corporel</div>
     </div>
-    <div class="text-lg sm:text-2xl mb-4">
-      25 & 26 Avril 2026 - Domaine de Beauregard - Normandie
+    <div class="text-lg sm:text-2xl mb-4 w-full 2xl:w-1/3">
+      <span v-if="!isLarge">25 & 26 Avril 2026 - Domaine de Beauregard - Normandie</span>
+      <div v-else><p>25 & 26 Avril 2026</p><p>Domaine de Beauregard - Normandie</p></div>
     </div>
   </section>
 
