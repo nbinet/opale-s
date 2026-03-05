@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import insta from '@/assets/images/instagram.png'
+import insta from '@/assets/images/insta.png'
 import bijou from '@/assets/images/bijou.png'
 import arrow from '@/assets/images/arrow.png'
 import opaleisInsta from '@/assets/images/opaleis_insta.png'
 import portrait from '@/assets/images/hair.jpg'
+import spacer from '@/assets/images/spacer.png'
 
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
@@ -39,6 +40,11 @@ const openLink = (url: string) => {
       <img :src="opaleisInsta" alt="Instagram opaleis" class="hidden md:block cursor-pointer hover:scale-105 transition-transform duration-300" @click="openLink('https://www.instagram.com/opaleis_events/')" />
     </div>
   </section>
+
+  <section class="flex justify-center">
+    <img :src="spacer" alt="spacer" />
+  </section>
+  
   <section>
     <Description>
       <Image><img :src="portrait" alt="portrait" /></Image>

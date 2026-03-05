@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import handshake from '@/assets/images/handshake.jpg'
+import spacer from '@/assets/images/spacer.png'
 
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
@@ -23,6 +24,11 @@ C’est aussi l’opportunité d’associer votre image à un événement élég
       </Text>
     </Description>
   </section>
+
+  <section class="flex justify-center">
+    <img :src="spacer" alt="spacer" />
+  </section>
+
   <section>
     <Title class="text-center pt-4">Vos avantages</Title>
     <ul class="list-disc list-inside custom-points">
@@ -31,10 +37,15 @@ C’est aussi l’opportunité d’associer votre image à un événement élég
       <li><span class="font-bold text-[#D29A33]">Remerciements :</span> Citation et remerciements lors du cocktail &amp; DJ set.</li>
       <li><span class="font-bold text-[#D29A33]">Partenariat sur mesure :</span> Opportunité de développer votre réseau et de valoriser votre marque auprès d’un public ciblé et engagé.</li>
     </ul>
-    <p class="text-center pt-4 italic">Chaque partenariat est pensé sur mesure, en fonction de vos valeurs, de votre activité et de vos envies de collaboration.</p>
+    <p class="text-center pt-8 italic">Chaque partenariat est pensé sur mesure, en fonction de vos valeurs,<br /> de votre activité et de vos envies de collaboration.</p>
   </section>
+
+  <section class="flex justify-center">
+    <img :src="spacer" alt="spacer" />
+  </section>
+
   <section class="flex flex-col items-center gap-4 pt-4">
-    <Title>Ils nous font confiance</Title>
+    <Title>Ils seront là</Title>
     <Artists />
   </section>
 </template>
