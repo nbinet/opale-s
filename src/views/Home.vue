@@ -12,6 +12,7 @@ import ongles from '@/assets/images/ongles.png'
 import annonce from '@/assets/images/annonce2.png'
 import annonceMobile from '@/assets/images/annonce.png'
 import programme from '@/assets/images/portrait-1.jpg'
+import spacer from '@/assets/images/spacer.png'
 
 import Description from '../components/Description/index.vue'
 import Image from '../components/Description/Image.vue'
@@ -101,10 +102,6 @@ const backgroundStyle = computed(() => ({
   <section>
     <Title class="text-center">Programme</Title>
     <div class="flex gap-14 my-14 justify-center items-center">
-      <!-- Image carrée qui suit la hauteur de la timeline -->
-      <!-- <div class="rounded-2xl border-2 border-[#967050] bg-center bg-cover h-full max-w-full"
-          :style="{ backgroundImage: `url(${programme})`, aspectRatio: '1 / 1' }">
-      </div> -->
       <img :src="programme" alt="programme" class="rounded-2xl border-2 border-[#967050] h-60 aspect-3/4 object-cover hidden md:block" />
 
       <!-- Timeline -->
@@ -128,9 +125,17 @@ const backgroundStyle = computed(() => ({
     <p class="text-center mt-4 text-[#E5AE38]">“Une expérience sensorielle et inspirante, dans un cadre élégant, moderne et inclusif”</p>
   </section>
 
+  <section class="flex justify-center">
+    <img :src="spacer" alt="spacer" />
+  </section>
+
   <section>
-    <Title class="text-center">Ils seront présents</Title>
+    <Title class="text-center">Exposants</Title>
     <Artists />
+  </section>
+
+  <section class="flex justify-center">
+    <img :src="spacer" alt="spacer" />
   </section>
 
   <section>

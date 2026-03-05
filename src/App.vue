@@ -6,7 +6,7 @@ import Footer from './components/Footer.vue'
 <template>
   <div id="app" class="quicksand-regular text-[#967050] bg-[#FAFAF9] sm:text-xl p-4">
     <Navbar />
-    <main class="py-4 space-y-14">
+    <main class="pt-4 pb-40 space-y-14">
       <router-view />
     </main>
     <Footer />

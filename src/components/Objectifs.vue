@@ -30,7 +30,7 @@ const objectifs = ref([
   <section class="flex flex-col items-center gap-4">
     <Title>Nos Objectifs</Title>
 
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-4">
       <div
         v-for="(objectif, i) in objectifs"
         :key="i"
@@ -42,10 +42,10 @@ const objectifs = ref([
         <img
           :src="objectif.image"
           alt="Objectif"
-          class="w-1/3 h-50 object-cover rounded-2xl border-2 border-[#E5AE38]"
+          class="aspect-4/3 h-30 md:h-50 object-cover rounded-2xl border-2 border-[#967050]"
         />
 
-        <p class="text-center">{{ objectif.text }}</p>
+        <p class="text-center text-sm md:text-base">{{ objectif.text }}</p>
       </div>
     </div>
   </section>
