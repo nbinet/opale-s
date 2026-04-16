@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import nails from '@/assets/images/partners/nails_addict_caen.png'
 import mains from '@/assets/images/partners/lesmainsetoilees.png'
 import cocongle from '@/assets/images/partners/cocongle__.jpg'
