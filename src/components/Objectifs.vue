@@ -6,6 +6,7 @@ import objectif2 from '@/assets/images/objectif-2.jpg'
 import objectif3 from '@/assets/images/objectif-3.jpg'
 import objectif4 from '@/assets/images/objectif-4.jpg'
 
+
 const objectifs = ref([
   {
     text: "Créer des passerelles entre les acteurs du monde de la beauté, du style et du bien-être",

@@ -11,7 +11,7 @@ import cils from '@/assets/images/cils.png'
 import ongles from '@/assets/images/ongles.png'
 import annonce from '@/assets/images/annonce2.png'
 import annonceMobile from '@/assets/images/annonce.png'
-import programme from '@/assets/images/portrait-1.jpg'
+import programme from '@/assets/images/objectif-5.jpg'
 import spacer from '@/assets/images/spacer.png'
 
 import Description from '../components/Description/index.vue'
@@ -102,7 +102,7 @@ const backgroundStyle = computed(() => ({
   <section>
     <Title class="text-center">Programme</Title>
     <div class="flex gap-14 my-14 justify-center items-center">
-      <img :src="programme" alt="programme" class="rounded-2xl border-2 border-[#967050] h-60 aspect-3/4 object-cover hidden md:block" />
+      <!-- <img :src="programme" alt="programme" class="rounded-2xl border-2 border-[#967050] h-60 aspect-3/4 object-cover hidden md:block" /> -->
 
       <!-- Timeline -->
       <div class="grid grid-cols-[1fr_auto_1fr] relative py-4 gap-y-4">
