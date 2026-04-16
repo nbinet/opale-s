@@ -15,8 +15,14 @@ import inkmagination from '@/assets/images/partners/inkmaginationtattoo.png'
 import kuuro from '@/assets/images/partners/kuuro.tattoo.png'
 import ossuary from '@/assets/images/partners/ossuary.tattoo.png'
 import palette from '@/assets/images/partners/palette.jpg'
+import pizza from '@/assets/images/partners/da_beppe.jpg'
+import funky from '@/assets/images/partners/funky.jpg'
 
-const artistes = ref([
+const shuffleArray = (array: any[]) => {
+  return [...array].sort(() => Math.random() - 0.5)
+}
+
+const artistes = ref(shuffleArray([
     { image: nails, insta: 'nails_addict_caen_', category: 'Prothésiste ongulaire', link: 'https://www.instagram.com/nails_addict_caen_/' },
     { image: mains, insta: 'lesmainsetoilees', category: 'Prothésiste ongulaire', link: 'https://www.instagram.com/lesmainsetoilees/' },
     { image: cocongle, insta: 'cocongle__', category: 'Prothésiste ongulaire', link: 'https://www.instagram.com/cocongle__/' },
@@ -31,9 +37,10 @@ const artistes = ref([
     { image: inkmagination, insta: 'inkmaginationtattoo', category: 'Tattoo artist', link: 'https://www.instagram.com/inkmaginationtattoo/' },
     { image: kuuro, insta: 'kuuro.tattoo', category: 'Tattoo artist', link: 'https://www.instagram.com/kuuro.tattoo/' },
     { image: ossuary, insta: 'ossuary.tattoo', category: 'Tattoo artist', link: 'https://www.instagram.com/ossuary.tattoo/' },
-    { image: palette, insta: 'palette_sucree_patisserie', category: 'Pâtisserie', link: 'https://www.instagram.com/palette_sucree_patisserie/' }
-
-])
+    { image: palette, insta: 'palette_sucree_patisserie', category: 'Pâtisseries', link: 'https://www.instagram.com/palette_sucree_patisserie/' },
+    { image: pizza, insta: 'da_beppe_pizza', category: 'Pizzas', link: 'https://www.instagram.com/da_beppe_pizza/' },
+    { image: funky, insta: 'funky_doughny', category: 'Donuts', link: 'https://www.instagram.com/funky_doughny/' },
+]))
 
 const openLink = (url: string) => {
     window.open(url, '_blank')
@@ -41,11 +48,18 @@ const openLink = (url: string) => {
 </script>
 
 <template>
-    <div class="flex flex-row flex-wrap justify-center gap-6 py-4">
-        <div v-for="(artiste, i) in artistes" :key="i" class="flex flex-col gap-2 items-center hover:scale-105 transition-transform duration-300 cursor-pointer" @click="openLink(artiste.link)">
-            <img :src="artiste.image" alt="Check" class="size-40 rounded-full border-2 sm:size-62" />
-            <p class="text-center text-xl">{{ artiste.insta }}</p>
-            <p class="text-center">{{ artiste.category }}</p>
-        </div>
+  <div class="overflow-hidden w-full py-4">
+    <div class="flex animate-scroll gap-6 w-max">
+      <div
+        v-for="(artiste, i) in [...artistes, ...artistes]"
+        :key="i"
+        class="flex flex-col gap-2 items-center hover:scale-105 transition-transform duration-300 cursor-pointer"
+        @click="openLink(artiste.link)"
+      >
+        <img :src="artiste.image" class="size-40 rounded-full border-2 sm:size-62" />
+        <p class="text-center text-xl">{{ artiste.insta }}</p>
+        <p class="text-center">{{ artiste.category }}</p>
+      </div>
     </div>
+  </div>
 </template>
